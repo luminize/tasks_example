@@ -17,6 +17,10 @@
     <LibraryReferences>{1a66728c-a52b-4f20-82e9-9ad1d98bf58a}</LibraryReferences>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GVLs\GVL.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
     <Compile Include="PlcTask1.TcTTO">
       <SubType>Code</SubType>
     </Compile>
