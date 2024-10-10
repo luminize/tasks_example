@@ -5,7 +5,7 @@
     <CycleTime>10000</CycleTime>
     <Priority>1</Priority>
     <PouCall>
-      <Name>MAIN</Name>
+      <Name>program1</Name>
     </PouCall>
     <TaskFBGuid>{87f66167-be2b-4ce0-b128-1fd314078f31}</TaskFBGuid>
     <Fb_init>{1d2e81b8-0039-426a-b539-d75391574e7a}</Fb_init>
