@@ -3,6 +3,8 @@
   <GVL Name="GVL" Id="{84bc136a-4fc0-4d0a-9eb7-e638f4d7660b}">
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
+	from_1_to_2 : INT := 0;
+	from_2_to_1 : INT := 0;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

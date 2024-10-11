@@ -3,10 +3,14 @@
   <POU Name="program2" Id="{cce6f35d-e8e0-431e-8764-77da23c4ebe9}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM program2
 VAR
+	to_1 : INT := 0;
+	from_1 : INT := 0;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[from_1 := gvl.from_1_to_2;
+to_1 := from_1 + 10;
+gvl.from_2_to_1 := to_1;]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

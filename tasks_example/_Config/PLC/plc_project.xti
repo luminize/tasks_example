@@ -1,15 +1,33 @@
 <?xml version="1.0"?>
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.44" ClassName="CNestedPlcProjDef">
 	<Project GUID="{0F06AA5F-6DC7-4158-A915-FDC9E83E9406}" Name="plc_project" PrjFilePath="..\..\plc_project\plc_project.plcproj" TmcFilePath="..\..\plc_project\plc_project.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{7CF338E2-57FE-1FE6-D8B6-55D2506D88E5}">
 			<Name>plc_project Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Contexts>
 				<Context>
-					<Id>1</Id>
-					<Name>Default</Name>
+					<Id NeedCalleeCall="true">0</Id>
+					<Name>PlcTask1</Name>
+					<ManualConfig>
+						<OTCID>#x02010030</OTCID>
+					</ManualConfig>
+					<Priority>1</Priority>
+					<CycleTime>10000000</CycleTime>
+				</Context>
+				<Context>
+					<Id NeedCalleeCall="true">1</Id>
+					<Name>PlcTask2</Name>
+					<ManualConfig>
+						<OTCID>#x02010040</OTCID>
+					</ManualConfig>
+					<Priority>2</Priority>
+					<CycleTime>10000000</CycleTime>
 				</Context>
 			</Contexts>
+			<TaskPouOids>
+				<TaskPouOid Prio="1" OTCID="#x08502001"/>
+				<TaskPouOid Prio="2" OTCID="#x08502002"/>
+			</TaskPouOids>
 		</Instance>
 	</Project>
 </TcSmItem>
